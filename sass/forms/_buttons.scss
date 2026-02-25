@@ -1,0 +1,189 @@
+button, .btn-primary, .btn-primary a, .wp-block-button__link, .woocommerce button.button.alt, 
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    font-family: $font__fancy;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	line-height: 1;
+	transition: 0.5s;
+	background: $color__bright-red;
+	color: white !important;     
+	font-size: 1em;
+	line-height: normal;
+	letter-spacing: 1px; 
+	padding: .5em 1em !important; 
+	margin: 0 .25em;
+	border: none;
+	border-radius: 0;
+
+	&:hover {
+		background: $color__light-red;
+		-webkit-animation: pulse !important;
+				animation: pulse !important; 
+		-webkit-animation-duration: 1s !important; 
+				animation-duration: 1s !important; 		
+	}
+
+	&:active,
+	&:focus {
+		border: none;
+		box-shadow: none;
+		background: $color__light-red;
+	}
+	a {
+		&:active {
+			border-bottom:none;
+		}
+	}
+}
+
+.wp-block-button__link .wp-element-button, a.wp-block-button__link.wp-element-button {
+	border-radius: 0;  
+	background: $color__bright-red;
+	  --mask: none;
+	  -webkit-mask: var(--mask);
+			  mask: var(--mask);
+	color: white !important;	
+	&:focus {
+		background: $color__red;
+	}
+}
+
+.btn-primary {
+  --c1: #cda349;
+  --c2: #fffacb;
+}
+
+.btn-secondary {
+	color: $color__border-button;
+	font-family: $font__fancy;
+	text-transform: uppercase;
+	border: 2px $color__border-button solid;
+	border-radius: 0 !important;
+	background: transparent;
+	&:hover {
+		-webkit-animation: pulse !important;
+		animation: pulse !important; 
+		-webkit-animation-duration: 1s !important; 
+		animation-duration: 1s !important; 
+	}
+	a {
+		&:visited {
+			color: $color__border-button !important;
+		}	
+	}
+}
+
+.is-style-outline {
+	font-family: $font__fancy;
+	text-transform: uppercase;
+	border-radius: 0 !important;
+	background: transparent !important;
+	&:hover {
+		-webkit-animation: pulse !important;
+		animation: pulse !important; 
+		-webkit-animation-duration: 1s !important; 
+		animation-duration: 1s !important; 
+	}
+	a.wp-block-button__link.wp-element-button {
+		background: transparent !important;
+		border: 2px $color__bright-red solid !important;
+		color: $color__bright-red !important;
+		&:focus {
+			border: 2px $color__red solid !important;
+			color: $color__red !important;			
+		}
+	}
+	a {
+		&:active, &:focus {
+			color: $color__red !important;
+			background: transparent;
+		}	
+	}	
+}
+
+.wp-block-button {
+    margin: 0 0.25em 1.5em 0.25em !important;
+    padding: 0;
+    a {
+        &:hover {
+        //border-bottom: 1px !important;
+        }
+    }
+}
+
+/*a.is-style-outline, input[type="text"] { 
+	font-family: $font__fancy;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 50px;
+	color: $color__coral !important;
+	background: transparent;
+	border: solid 2px $color__coral !important;
+	-webkit-transition: color 0.6s ease-in-out;
+	-moz-transition: color 0.6s ease-in-out;
+	-o-transition: color 0.6s ease-in-out;
+	transition: color 0.6s ease-in-out;
+	&:hover, &:active, &:focus {
+		color: $color__dark-coral !important;
+		border: solid 2px $color__dark-coral !important;
+	}
+	font-size: 1em;
+	line-height: 1;
+	padding: .6em 1em .5em;
+	margin: 0 .25em;
+	//text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-transition: border 0.6s ease-in-out;
+	-moz-transition: border 0.6s ease-in-out;
+	-o-transition: border 0.6s ease-in-out;
+	transition: border 0.6s ease-in-out;
+}*/
+
+.call-to-action-btn {
+	font-family: $font__main;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.4em;
+	color: white !important;
+	background: $color__bright-red;
+	border-radius: 0;
+	//color: $color__light-pink !important;
+
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	@media all and (max-width: 600px) {
+		margin-top: 1em;
+	}
+
+	&:hover {
+		border-width: 2px;
+	border-stye: solid;
+	border-image: linear-gradient(-45deg, $color__dark-gold, $color__light-gold, $color__dark-gold) 1;
+	-webkit-animation: pulse !important;
+			animation: pulse !important; 
+	-webkit-animation-duration: 1s !important; 
+			animation-duration: 1s !important; 
+	}
+
+}
+
+a.call-to-action-btn {
+	transition: 0.5s;
+	background: $color__bright-red;
+	color: white;
+	border: none !important;
+	&:hover {
+		background: $color__light-red;
+		border: none !important;
+	}
+}
+
+.social {
+	.btn-primary {
+		padding-top: .5em;
+	}
+}

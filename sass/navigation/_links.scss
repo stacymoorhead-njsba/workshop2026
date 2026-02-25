@@ -1,0 +1,27 @@
+a {
+	color: $color__link;
+	text-decoration: none;
+	border-bottom: 0;
+	-webkit-transition: color 0.6s ease-in-out;
+	-o-transition: color 0.6s ease-in-out;
+	transition: color 0.6s ease-in-out;	
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+		border-bottom: 3px solid $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.navbar-brand img {width: 50px; height: auto;}

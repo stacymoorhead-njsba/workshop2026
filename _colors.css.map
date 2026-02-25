@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAiB,CAMjB;;;;;;CAOC",
+"sources": ["../../upgrade/wordpress-6.9.1-no-content/wordpress/wp-admin/css/colors/midnight/colors.scss"],
+"names": [],
+"file": "colors.css"
+}

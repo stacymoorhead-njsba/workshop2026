@@ -1,0 +1,153 @@
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;  
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+body {
+	font-family: $font__main;
+	font-weight:300;
+	font-size: 1.2em;
+	background-image:url("img/ws26website_dotted_line_bg.svg");   
+	background-repeat:repeat;
+	background-color: $color__background-body;  
+	@media all and (max-width: 600px) {
+		font-size: 1em;
+	}
+}
+
+h1 {
+	z-index: 100;
+	font-family: $font__fancy;
+	font-weight: 400;
+	font-style: normal;
+	font-size:3em;
+	letter-spacing: 1px;
+	line-height: .9em;
+	
+	  color: $color__gold;
+	  background-image: linear-gradient(
+		$color__dark-gold 20%,
+		$color__light-gold 50%,
+		$color__dark-gold 80%
+	  );
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 -webkit-text-stroke: 1px $color__gold;
+	 &::before {
+		background: -webkit-linear-gradient(
+		-45deg,
+		$color__dark-gold 40%,
+		$color__light-gold 50%,
+		$color__dark-gold 60%
+	  );
+	  -webkit-background-clip: text;
+	  -webkit-text-stroke: 2px transparent;
+	  color: $color__gold;
+	}
+	@media all and (max-width: 600px) {
+		font-size: 3em;
+	}
+    @media all and (max-width: 400px) {
+		font-size: 2em;
+	}
+}
+
+h2 {
+	color: $color__bright-red;
+	text-transform: uppercase; 
+	font-family: $font__fancy;
+	letter-spacing: 1px;
+	margin: 1em auto;
+}
+
+h3 {
+	margin-top: 1em;
+	color: $color__red;
+	text-transform:none;
+}
+
+h4 {
+	color: $color__red;
+	text-transform:none;
+}
+
+
+h3, h4 {
+	
+
+}
+
+h3, h4, h5, h6 {
+	font-family: $font__main;
+
+}
+
+blockquote, q {
+	//color: $color__dark-red;
+	font-style: italic;
+	border-left: solid 3px $color__light-cyan;
+	padding-left: 1em;
+	margin: 2em;
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: $color__dark-coral;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+figure.wp-block-embed div {
+	position:relative;
+	padding-top:56.25%;
+	iframe {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+}	
+
+.wp-caption-text, .wp-block-image figcaption {
+	font-famiy: $font__condensed !important;
+	color: $color__med-gray !important;
+	text-transform: uppercase;
+	font-size: .7em;
+	font-weigth: 900;
+	text-align: center;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+hr {
+	background-color:$color__coral;
+}
+.wp-block-separator {
+	border-top: 0; 
+	border-bottom: 0; 
+}
+
+@import "tables";

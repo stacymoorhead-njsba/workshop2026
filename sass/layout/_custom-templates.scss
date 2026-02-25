@@ -1,0 +1,607 @@
+/*--------FAQ--------*/
+
+.faq {
+	margin: 1em 0 3em 0;
+}
+
+
+.accordion-header {
+	button {
+		animation: none !important;  
+	}
+}
+
+.accordion-item {
+	background: transparent;
+	margin: 0;
+	border-radius: 0 !important;
+	border: none;
+	border-left: 0;
+	border-right: 0;
+	border-color: $color__gold !important; 
+}
+
+.accordion-item:first-of-type {
+	border-top: 0;
+	
+}
+
+.accordion-item:last-of-type {
+	border-bottom: 0;
+}
+
+
+.accordion-button, .accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type .accordion-button, .accordion-button:not(.collapsed), .accordion-item:last-of-type .accordion-button.collapsed{
+	font-family: $font__main;
+	font-size: 0.55em;
+	//line-height: 1.4em;
+	font-weight: 700 !important;
+	text-transform: none !important;
+	letter-spacing: 0 !important;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+	margin: 0;
+	color: $color__text-main !important;
+	&:hover, &:active, &:focus {
+		color: $color__teal !important;
+		background: transparent; 
+	}
+	&:hover {
+		transition: none;
+	}
+	
+}
+
+
+/*--------KEYNOTES--------*/
+.keynote-speaker {
+	
+	background:url("img/ws-website-graphics_straight-spotlights.svg") no-repeat;
+	background-size: 100%;
+	background-position:center top;
+	background-color: white;
+	  --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
+	  -webkit-mask: var(--mask);
+			  mask: var(--mask);
+	margin: 1em;
+	padding: 2em;
+	border-left: 0;
+	border-right: 0;
+	box-sizing: border-box;
+	h2 {
+		font-family: $font__fancy;
+		margin: 0;
+	}
+	h3 {margin:0;}
+	h3 {font-size: 1.4em; text-transform: none;}	
+	@media all and (max-width: 800px) {
+		background-size: 150%;
+		//margin: 1em;
+	}
+}
+
+.keynote-speaker-header {
+	/*@include gradient(45deg, $gold-gradient);
+	  --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
+	  -webkit-mask: var(--mask);
+			  mask: var(--mask);	*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 2em;
+	padding-bottom: 1em;
+	//border-bottom: 3px solid $color__light-coral;
+	@media all and (max-width: 488px) {
+		//padding-bottom: 3em;
+	}	
+
+	.speaker-image {
+		//@include box-shadow(7px, 7px, 0, $color__gray);
+		border-radius: 50%;
+		border: 5px $color__border-button solid;
+		margin-right: 1em;
+		width: 200px;   
+		height: 200px;
+		overflow: hidden;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.speaker-info {
+		max-width: 600px;
+		//flex-shrink: 0;
+		@media all and (max-width: 488px) {
+			
+		}	
+		@media all and (max-width: 991px) {
+			text-align: center;
+			margin-top: 1em;
+		}
+	}
+}
+
+.bio {
+	background: #f6f8f8;
+	padding: 1em;
+	//border-top: 3px solid $color__light-cyan;
+	//border-bottom: 3px solid $color__light-cyan;
+}
+
+.squiggly {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+
+}
+
+
+/*--------SWAG BAG--------*/
+.swagbag {
+	width: 400px;
+	margin: .5em;
+	background-color: $color__lightest-gray;
+	text-align: center;
+	img {
+		width: 400px;
+	}
+	.swagbag-text {
+		padding: 1em 1em .5em 1em;
+	}
+	@media all and (max-width: 400px) {
+		width: 100%;
+		margin: 0 0 1em 0;
+		img {
+			width:100%;
+		}
+	}	
+}
+
+/*--------MEET THE LEADERSHIP--------*/
+
+.leadership {
+	margin-top: 5em;
+	@media all and (max-width: 991px) {
+		margin-top:0;
+	}
+}
+.organization {
+	display:inline-block;
+	text-align: center;
+	margin-top: 1em;
+	padding: .25em 1em;
+	color: $color__light-cyan; 
+	
+}
+.members {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.member {
+	margin:50px 1em;
+	width: 250px;
+	border-radius:0;
+	border: 3px $color__border-button solid;
+	padding: 1em;
+	background: white;
+	text-align: center;
+	img {
+		@include gradient(-45deg, $gold-gradient);
+		width: 100px;
+		border: 3px $color__border-button solid;
+		border-radius: 50%;
+		margin-bottom: 1em;
+		margin-top: -50px;
+	}
+	h3 {
+		font-size: 1em;
+		font-weight:800;
+		color: $color__dark-teal;
+	}
+	p {
+		line-height: 1.25em !important;
+	}
+	.name {
+		font-family: $font__fancy;
+		color: $color__teal;
+		margin-bottom: 0;
+		letter-spacing: 1px;
+		line-height: 1.25em !important;
+	}
+	.district {
+		margin-top: 0;
+		line-height: 1.25em !important;
+	}
+	@media only screen and (max-width: 40em) {
+		width: 100%;
+		margin: 50px 1em 0 1em;
+	}
+}
+
+
+/*--------WEBINARS--------*/
+.webinars {
+	background-color:  $color__lightest-gray;
+}
+.webinar {
+	max-width: 400px;
+	margin: 1em;
+	padding: 1em;
+	background-color: #f4f2f2;
+	border-left: 0;
+	border-right: 0;
+	box-sizing: border-box;
+	h2, h3 {
+		font-family: $font__condensed;
+		margin: 0;
+	}
+	h2 {
+		letter-spacing: 1px;
+		line-height: 1em;
+		margin-top: .5em;
+		font-size: 1.6em;
+		letter-spacing: 0;
+		text-transform:none;
+	}
+	h3 {font-size: 1.3em; 
+		
+	}	
+	.booth {
+		color: #9E9E9E;
+		font-weight:400;
+	}
+
+	img {
+		max-height: 100px;
+	}
+	.btn-primary:hover  {
+		border: none;
+	}
+	@media all and (max-width: 688px) {
+		max-width:100%;
+		margin: 1em 0;
+	}
+}
+
+.webinar-image {
+	text-align:center;
+	background: white;
+	padding: .25em;
+}
+
+.webinar-info {
+	text-align: center;
+}
+
+.webinar-btn {
+	//width: 100%;
+	//border-top:1px solid $color__lightest-gray;
+	//padding-top: 1em;
+	margin-top:1.5em;
+	text-align:center;
+}
+
+
+/*--------INDUSTRY PARTNERS--------*/
+.logo {
+	margin: 1em;
+	text-align: center;
+	img {
+		border-radius: 5px;
+	}
+	a {
+		border-bottom: none;
+	}
+}
+
+.logo-container {
+	max-height: 100px;
+}
+
+.industry-partners {
+
+}
+
+.List {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.Company {
+	width: 200px;
+	margin: .5em 1em;
+	background: white;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	  --mask: radial-gradient(15px at 15px 15px,#0000 98%,#000) -15px -15px;
+	  -webkit-mask: var(--mask);
+			  mask: var(--mask);   
+	text-align: center;
+	padding: 1em;
+	&:hover {
+		animation: pulse; 
+		animation-duration: 1s; 
+	}
+	a, a:hover, a:focus, a:active {
+		color: $color__text-main;
+	}
+}
+
+.CompanyName, .BoothNumber, .Tier {
+	line-height: 1em;
+}
+
+.CompanyLogo img {
+	width: auto;
+    max-height: 100px;
+    max-width: 160px;
+    height: auto;
+}
+
+.CompanyName {
+	font-weight:700;
+	margin-top: 1em;
+	border-top: 2px solid $color__gold;
+    padding-top: 1em;
+}
+
+.BoothNumber {   
+	margin-top: .5em;
+	&:before {
+		content: "Booth: "; 
+	}
+}
+
+.Tier {
+	font-family: $font__fancy;
+	margin-top: 1em;
+	padding: .25em .25em .35em .25em;
+	//background: $color__lightest-gray;
+	text-transform: uppercase;
+}
+
+.cosponsortier{
+	.Tier {
+		//@include gradient(45deg, $call-to-action-btn);
+		//font-weight: 700;
+		color: $color__gold;
+		background: $color__red;
+	}
+}
+
+.platinumtier{
+	.Tier {
+		background: $color__teal;
+		color: white;
+	}
+}
+
+.goldtier{
+	.Tier {
+		background: $color__dark-gold;
+		color: white;
+	}
+}
+
+.goldplustier{
+	.Tier {
+		background: $color__teal;
+		color: white;
+	}
+}
+
+.silvertier{
+	.Tier { 
+		background: $color__lightest-gray;
+		color: $color__dark-teal;
+	}
+}
+
+.exhibitortier{
+	.Tier {
+		background: $color__dark-teal;
+		color: white;
+	}
+}
+
+.nonprofittier{
+	.Tier {
+		background: $color__blue;
+		color: white;
+	}
+}
+
+div#njsbamys {
+    text-align: center;
+}
+
+.woocommerce {	
+	tr, th {
+		border-bottom: 0 !important;
+	}
+	
+	.product_meta, .product_meta a {
+		font-style: italic;
+    	color: $color__light-gray;
+	}
+}
+
+h2.woocommerce-loop-product__title {
+	font-family: $font__main;
+}
+
+h2.woocommerce-loop-category__title {
+    font-family: $font__fancy;
+	font-size: 1.6em !important;
+	color: $color__plum;
+	mark {
+		background: transparent;
+		color: $color__plum;
+	}
+}
+
+h2.woocommerce-loop-product__title {
+    text-transform: none;
+}
+
+.woocommerce-products-header {
+	margin: 1em 0;
+}
+
+.woocommerce ul.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product {
+	text-align: center;
+}
+
+.account-info {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.woocommerce-tabs{
+	padding-bottom: 2em;
+}
+
+input#coupon_code {
+    width: auto;
+	text-align:center;
+}
+
+.wc-proceed-to-checkout a.checkout-button {
+	font-family: $font__fancy;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 50px;
+	background: $color__background-button !important;
+	//box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 1) !important;
+	font-size: 1em;
+	line-height: 1;
+	padding: .6em 1em .5em !important;
+	margin: 0 .25em;
+	//text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-transition: background 0.6s ease-in-out;
+	-moz-transition: background 0.6s ease-in-out;
+	-o-transition: background 0.6s ease-in-out;
+	transition: background 0.6s ease-in-out;
+
+	&:hover {
+		//border-color: $color__border-button-hover;
+        //border: 1px solid $color__border-button-hover;
+		background: $color__background-button-hover !important;
+		//box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+		background: $color__background-button-hover;
+		//box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+	}	
+}
+
+.woocommerce-billing-fields {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	textarea {
+		border: 1px solid #aaa !important;
+    	border-radius: 4px !important;
+		font-family: $font__main;
+		text-transform: none;
+		letter-spacing: normal;
+	}
+}
+
+textarea#order_comments {
+    border-radius: 4px;
+}
+
+#customer_details {
+	h3 {
+		text-transform: capitalize;
+	}
+}
+
+#ship-to-different-address-checkbox {
+	margin-right: .25em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="username"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	font-family: $font__main !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	color: $color__text-input !important;
+	&:active {
+	color: $color__text-input !important;
+	}
+}
+
+ .icon::before {
+    /* removed font- based rules */
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+.pf-size-guide-modal__close {
+	img {
+		display: none;
+	}
+	&:before{
+		font: var(--fa-font-solid);
+    	content: "\58";
+	}	
+}
+
+div#ppc-button-ppcp-gateway {
+	width: 50%;
+	@media all and (max-width: 540px) {
+		width: 100%;
+	}	
+}
+
+.ppc-button-wrapper {
+    display: flex;
+    justify-content: center;
+}

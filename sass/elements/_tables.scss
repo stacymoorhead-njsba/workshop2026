@@ -1,0 +1,62 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+thead {
+	color: $color__dark-teal;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 3px solid $color__gold !important; 
+}
+
+tr {
+	border-bottom: 2px solid $color__gold;
+}
+
+td, th {
+	padding: .5em; 
+}
+
+td {
+	font-size: .8em;
+	line-height: 1.2em;
+}
+
+th {
+	vertical-align: bottom; 
+	@media all and (max-width: 600px) {
+		font-size: .7em;
+		letter-spacing: 0;
+	}
+	
+}
+
+.wp-block-table {
+	figcaption {
+		text-align: center;
+		color: $color__med-gray;
+		font-size: .8em;
+	}
+	table {
+		@media all and (max-width: 800px) and (orientation:portrait){
+			width: 1000px;
+		}
+	}	
+}
+
+.table-align-top {
+	td {
+		vertical-align: top;
+	}
+}
+
+.wp-block-table td, .wp-block-table th {
+    border: none;
+}
+
+.table-scroll {
+		@media all and (max-width: 600px) {
+		width: 1200px !important;
+	}
+}

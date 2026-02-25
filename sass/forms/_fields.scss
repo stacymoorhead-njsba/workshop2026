@@ -1,0 +1,70 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+    font-family: $font__main !important;
+	text-transform: none !important;
+	letter-spacing: normal !important;
+	color: $color__text-input !important;
+	
+	border: 1px solid $color__border-input;
+	border-radius: 0;
+	font-size: 1em;
+	line-height: 1;
+	padding: .25em 1em .25em;
+	margin: 0 .25em;
+
+	&:focus {
+		color: $color__text-input-focus;
+        border: 1px solid $color__pink;
+	}
+	&:active {
+		color: $color__text-input !important;
+	}
+}
+
+select {
+	border: 1px solid $color__pink;
+	border-radius: 0;
+	padding: .25em;
+}
+
+textarea {
+	width: 100%;
+	border:0;
+	border-radius:0;
+	background:#EDEDED;
+}
+
+.wpcf7-form {
+	label {
+		font-family: $font__condensed;
+		//text-transform: uppercase;
+		font-size: 1.2em;
+		font-weight: 700;
+		color: $color__navy;
+		width: 100%;
+		letter-spacing: 1px;
+	}
+	input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+		color: #666;
+		font-size: .8em;
+		line-height: 1;
+		padding: 0.25em 1em 0.25em;
+		margin-top: 0.5em;
+		width: 100%;
+		font-weight: 400;
+	}	
+}

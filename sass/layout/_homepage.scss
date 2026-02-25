@@ -1,0 +1,425 @@
+//--------------------------------------------------
+.container-homepage  {
+	margin: 0 auto;
+	max-width: 1200px;
+	@media all and (max-width: 1200px) {
+		margin: 0 2em;
+	}
+}
+.front-page-bg {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: $color__background-body;  
+	background: -webkit-linear-gradient($color__background-body 50%, #131313 100%);
+	background: -o-linear-gradient($color__background-body 50%, #131313 100%);
+	background: linear-gradient($color__background-body 50%, #131313 100%);
+	
+}
+.ticket, .call-to-action, .kids, .spotlight, .bottom-spotlight {
+	@media all and (max-width: 600px) and (orientation:portrait) {
+		animation:disabled !important;
+	}
+}
+.hero {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background: url("img/ws26website_homepage_banner.svg") no-repeat;
+	background-size: 90% auto;
+	background-position: top;
+	@media all and (orientation:portrait) {
+		height: 60vh;
+	}
+	@media all and (max-width: 600px) {
+		height:600px !important;
+	}		
+
+	.call-to-action {
+		z-index: 0;
+		//width: 600px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		position: absolute;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		bottom: 40%;
+		background-color: rgba(0,67,106,0.95);
+		border: none !important;
+		border-radius: 9999px;
+		padding: 1em 2em;
+		font-size: .8em;
+		-webkit-animation: bounceInUp;
+		animation: bounceInUp; 
+		-webkit-animation-duration: 2s; 
+		animation-duration: 2s; 
+		h2 {
+			font-weight: 700;
+			font-size: 1.4em;
+			text-transform: none;
+			letter-spacing: normal;
+			color: $color__lime-green; 
+			margin-bottom:.5em;
+		}
+		p {
+			margin-bottom: 0;
+			color: white;
+			font-family: $font__main;
+			font-size: 1.2em;
+		}
+		.text-align-left {text-align:left;}
+		.call-to-action-text {
+			width:100%;
+			margin: auto 1em;
+		}
+		.btn-center {
+			width:100%;
+			display:flex;
+			justify-content:center;
+		}	
+		.btn {
+			margin:auto 1em;	
+		}
+		@media all and (max-width: 991px) and (orientation:portrait) {
+			//font-size: .8em;
+		}	
+		@media all and (max-width: 600px) {
+			position: absolute;
+			top: 50%;
+			bottom: unset;
+			min-width:unset;
+			margin: 0 1em !important;
+		}			
+	}
+	.call-to-action-position {
+		z-index: 0;
+		height: 100vh;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+    	-webkit-box-pack: center;
+    	    -ms-flex-pack: center;
+    	        justify-content: center;
+		@media all and (max-width: 600px) {
+			//height: 300px !important;
+		}			
+	}
+	
+	.scroll-down {
+		z-index: 100;
+		cursor:pointer;
+		position: absolute;
+		bottom: 25%;
+		right: 5%;
+		width: 150px;
+		height: auto;
+		-webkit-animation: bounceInDown;
+		animation: bounceInDown; 
+		-webkit-animation-duration: 2s;  
+		animation-duration: 2s; 
+		animation-delay: 2s;
+		img {
+			width:150px;
+		}
+		a, a:focus, a:hover, a:active {
+			border:none;
+			outline:none;
+		}
+
+		@media all and (max-width: 991px) {
+			left: auto;
+			bottom: 12%;
+		}	
+		@media all and (max-width: 991px) and (orientation:portrait) {
+			left: auto;
+			bottom: 17%;
+		}	
+		@media all and (max-width: 600px) {
+			display: none;
+		}	
+		@media all and (orientation:portrait) {
+			display: none;
+		}
+	}
+	@-webkit-keyframes scroll-ticket {
+	  from {opacity: 0.0;}
+	  to {opacity: 0.1;}
+	}
+	.ticket-fade{
+		-webkit-animation-name: scroll-ticket;
+		-webkit-animation-duration: 2.5s;
+		-webkit-animation-timing-function:ease-in;
+	}	
+	
+	.ticket {
+		position: absolute;
+		bottom: 40%;
+		left: 15%;
+		width: 300px;
+		height: auto;
+		animation: ticket 1s normal forwards ease-in-out;
+		animation-delay: 3s;
+		opacity: 0;
+		img {
+			width:300px;
+		}
+		@media all and (max-width: 991px) {
+			right: 10%;
+			left: auto;
+			top: 30%;
+			width: 200px;
+		}	
+	
+		@media all and (max-width: 600px) {
+			position: absolute;
+			width: 150px;
+			right: 10%;
+			top: 25%;
+			opacity: 1;
+		}	
+	}	
+	@keyframes ticket {
+	  0% {
+		transform: translate(0, -1000px);
+	  }
+
+	  100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	  }
+	}	
+
+}
+	
+.spotlight {
+	z-index: 100;
+	width: 100%;
+	height: auto;
+	position:relative;
+	-webkit-animation: bounceInDown;
+	animation: bounceInDown; 
+	-webkit-animation-duration: 1s; 
+	animation-duration: 1s; 
+	img {
+		width: 100%;
+		height: auto;
+		position:relative;
+	}
+}
+.kids {
+	z-index: 0;
+	position: relative !important;
+	bottom: -5%;
+	width: 100%;
+	height: auto;
+	position:relative;
+	-webkit-animation: bounceInLeft;
+	animation: bounceInLeft; 
+	-webkit-animation-duration: 3s; 
+	animation-duration: 3s; 
+}
+.bottom-spotlight {
+	z-index: 0;
+	position: relative !important;
+	bottom: 15%;
+	width: 100%;
+	height: auto;
+	position:relative;
+	-webkit-animation: bounceInUp;
+	animation: bounceInUp; 
+	-webkit-animation-duration: 5s; 
+	animation-duration: 5s; 
+	@media all and (max-width: 600px) {
+		position: absolute;
+		top: -5;
+	}	
+	@media all and (orientation:portrait) {
+		position: absolute;
+		bottom: auto;
+	}	
+}
+.entry-content-home {
+	position: relative;
+	z-index: 0;
+	background: white;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	  --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
+	  -webkit-mask: var(--mask);
+			  mask: var(--mask);
+	padding: 2em;
+	margin-bottom: 3em;
+	@media all and (max-width: 991px) and (orientation:portrait){
+		//margin: 0 1em 1em 1em;;
+	}	
+	a {
+		display:inline-block;
+		&:hover {
+			-webkit-animation: pulse !important;
+			animation: pulse !important; 
+			-webkit-animation-duration: 1s !important; 
+			animation-duration: 1s !important; 
+			border: none;
+		}		
+	}
+}
+
+
+.landing-message{
+	color: white;
+	font-family: $font__fancy;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+    border: 0; 
+	margin:0;
+}
+.icons {
+	margin-bottom: 4em;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 1.5em 0;
+	font-family: $font__main;
+	@media all and (max-width: 600px) {
+		font-size: .8em;
+	}	
+	a {
+		border: 0;
+		&:hover {
+			border: 0;
+			opacity: 100;
+		}
+		p {
+			color: white;
+		}
+	}
+	figure {
+		width: 40%;
+		margin: 1em 1em 1em 2em;
+		padding: 1em;
+		background-image:url("img/ws-website-graphics_velvet.svg"); 
+		background-repeat:repeat;
+		background-size: 25% auto;
+		background-color: $color__background-body;  
+		&:hover {
+			-webkit-animation: pulse;
+			        animation: pulse; 
+  			-webkit-animation-duration: 1s; 
+  			        animation-duration: 1s; 
+		}
+		@media all and (max-width: 600px) {
+			width: 80%;
+		}	
+	}
+	p {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		margin-left: 63px;
+		color: white;
+	}
+	img {
+		width: 100px;
+		height: auto;
+		float: left;
+		margin-right: 1em;
+		margin-left:-4em;
+	}
+	figcaption {
+		//margin-top:.5em;
+		margin-bottom: .5em;
+		margin-left: 63px;
+		font-family: $font__fancy; 
+		color: $color__light-cyan;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 1.6em;
+		line-height: 1.1em;
+	}
+}
+.video-spotlight {
+	position: relative;
+	z-index: 100;
+	height: 50px;
+	//overflow:visible;
+	@media all and (max-width: 600px) {
+		height: 100px;
+		overflow: hidden;
+		z-index: 100;
+		position: relative;
+		//width: 200%;
+		margin-left: -25px;
+	}
+	img {
+		width:100%;
+		height: auto;
+		@media all and (max-width: 600px) {
+			width: auto;
+			height: 175px;
+			max-width: none;
+		}		
+	}
+}
+.homepage-video {
+	padding: 6em 6em 2em 6em;
+	background: $color__bright-red;
+	background-image:url("img/ws-website-graphics_stripes.svg"); 
+	background-repeat:repeat-x;
+	background-size: auto 100%;	
+	margin-bottom:2em;
+	h2 {
+		color: $color__teal;
+		margin-bottom: 0;
+	}
+	p{font-size: 1.2em;}
+	@media all and (max-width: 600px) {
+		padding: 5em 2em 2em 2em;
+		margin-top: -70px;
+	}
+	.video-bg {
+		background: white;
+		-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+		  --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
+		  -webkit-mask: var(--mask);
+				  mask: var(--mask);
+		padding: 2em;		
+	}
+	.video-description {
+		padding-right: 2em;
+		p {
+			@media all and (max-width: 600px) {
+				font-size: 1em;
+			}
+		}
+		@media all and (max-width: 600px) {
+			padding-right: 1em;
+		}
+	}
+	.video-container {
+		 position: relative;
+		  overflow: hidden;
+		  width: 100%;
+		  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	}	
+	iframe {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 100%;
+	    height: 100%;
+	}	
+}
+canvas {
+    padding-right: 3em;
+}
