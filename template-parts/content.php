@@ -34,7 +34,7 @@
 
 				<?php workshop_post_thumbnail(); ?>
 
-				<div class="entry-content">
+				<div class="entry-content content-bg">
 					<?php
 					the_content(
 						sprintf(

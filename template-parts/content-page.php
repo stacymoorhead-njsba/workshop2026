@@ -9,14 +9,15 @@
 
 ?>
 
-<article class="content-page-center" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="content-page-center content-bg" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php workshop_post_thumbnail(); ?>
 	<?php
 	$call_to_action = get_field('call_to_action');
 	if( $call_to_action['headline'] || $call_to_action['description'] || $call_to_action['call_to_action_button_url'] || $call_to_action['call_to_action_button_link_text'] ) { ?>
 	<div class="call-to-action fade-in-4s">
-		<div class="call-to-action-text">
+		<div class="call-to-action-text <?php 
+			if( $call_to_action['call_to_action_button_url'] && $call_to_action['call_to_action_button_link_text'] ) { ?>text-align-left <?php } ?>">
 			<h2><?php echo esc_html( $call_to_action['headline'] ); ?></h2>
 			<p><?php echo esc_html( $call_to_action['description'] ); ?></p>
 		</div><!--call-to-action-text-->
@@ -30,7 +31,6 @@
 				<?php if( $call_to_action['headline'] || $call_to_action['description'] || $call_to_action['call_to_action_button_url'] || $call_to_action['call_to_action_button_link_text'] ) {?> cta-padding <?php } ?>
 				
 				">
-		
 		<?php
 		the_content();
 
@@ -66,3 +66,4 @@
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
+

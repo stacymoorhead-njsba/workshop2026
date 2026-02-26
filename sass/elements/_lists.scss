@@ -11,8 +11,8 @@ ul {
 	li:before {
 		font-family:$font__icons;
 		font-weight: 900;
-		color: $color__light-teal;
-	  	content: '\f138';
+		color: $color__teal;
+	  	content: '\f124';
 	 	position: absolute;
 	 	margin-left: -25px;
 		padding-top: .25em;
@@ -24,7 +24,7 @@ ul {
 		li:before {
 			font-family:$font__icons;
 			font-weight: 900;
-			color: $color__light-teal;
+			color: $color__teal;
 			content: '\f054';
 			position: absolute;
 			margin-left: -25px;

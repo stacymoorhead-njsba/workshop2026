@@ -9,31 +9,34 @@ Template Name: Front Page
 
 get_header();
 ?>
-<main id="primary" class="site-main front-page-bg">
+<main id="primary" class="site-main">
 
 	<h1 style="display:none;">Welcome to Workshop </h1>
 	<section class="hero" id="hero">
+		<div class="banner">
+			<img src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner.svg" alt="vintage rolled out map with the outline of land. There are blue and gold hot air balloons with pencil points for a basket floating along a coral-colored dotted line. There are two sketched sillouttes of student explorers waling along the line. In the center, the words Workshop 2026 are writtin in a cursive font. To the right of that a larger hot air balloon floats with a banner containing the tagline Charting the Path, Empowering Journeys.">
+			<?php
+			$call_to_action = get_field('call_to_action');
+			if( $call_to_action['headline'] || $call_to_action['description'] || $call_to_action['call_to_action_button_url'] || $call_to_action['call_to_action_button_link_text'] ) { ?>
+			<div class="container call-to-action-position">
+				<div id="fade-in-4s" class="call-to-action-home">
+							<div class="call-to-action-text <?php 
+							if( $call_to_action['call_to_action_button_url'] && $call_to_action['call_to_action_button_link_text'] ) { ?>text-align-left <?php } ?>">
+								<h2><?php echo esc_html( $call_to_action['headline'] ); ?></h2>
+								<p><?php echo esc_html( $call_to_action['description'] ); ?></p>
+							</div><!--call-to-action-text-->
+							<?php 
+							if( $call_to_action['call_to_action_button_url'] && $call_to_action['call_to_action_button_link_text'] ) { ?>
+
+								<a role="button" class="btn call-to-action-btn" href="<?php echo esc_url( $call_to_action['call_to_action_button_url'] ); ?>"><?php echo esc_html( $call_to_action['call_to_action_button_link_text'] ); ?></a>
+								<?php } ?>
+				</div><!--call-to-action-->			
+			</div><!--container-->	
+			<?php } ?>	
+		</div><!--banner-->	
 		<div class="scroll-down">
 			<a href="#scroll-down"><img src="/wp-content/themes/workshop2026/img/ws26website_scroll.svg" alt="red gps marker with the words scroll and an arrow pointing down"></a>
-		</div><!--scroll-down-->
-		<?php
-		$call_to_action = get_field('call_to_action');
-		if( $call_to_action['headline'] || $call_to_action['description'] || $call_to_action['call_to_action_button_url'] || $call_to_action['call_to_action_button_link_text'] ) { ?>
-		<div class="container call-to-action-position">
-			<div id="fade-in-4s" class="call-to-action">
-						<div class="call-to-action-text <?php 
-						if( $call_to_action['call_to_action_button_url'] && $call_to_action['call_to_action_button_link_text'] ) { ?>text-align-left <?php } ?>">
-							<h2><?php echo esc_html( $call_to_action['headline'] ); ?></h2>
-							<p><?php echo esc_html( $call_to_action['description'] ); ?></p>
-						</div><!--call-to-action-text-->
-						<?php 
-						if( $call_to_action['call_to_action_button_url'] && $call_to_action['call_to_action_button_link_text'] ) { ?>
-						
-							<a role="button" class="btn call-to-action-btn" href="<?php echo esc_url( $call_to_action['call_to_action_button_url'] ); ?>"><?php echo esc_html( $call_to_action['call_to_action_button_link_text'] ); ?></a>
-							<?php } ?>
-			</div><!--call-to-action-->			
-		</div><!--container-->	
-		<?php } ?>			
+		</div><!--scroll-down-->		
 	</section><!--hero-->
 	<div id="scroll-down"></div>
 	<?php
@@ -68,22 +71,18 @@ get_header();
 	$video_description = get_field('video_description');
 	$video_embed = get_field('video_embed');
 	if( $video_embed ) { ?>	
-	<div class="video-spotlight">
-		<img src="/wp-content/themes/workshop2026/img/ws-website-graphics_straight-spotlights.svg" alt="spotlights pointing down">	
-	</div><!--video-spotlight-->	
-	<section class="homepage-video shaddow">
-		<div class="video-bg">
-			<div class="row">
-				<div class="col-xl-4 video-description">
-					<?php the_field('video_description'); ?>
-				</div>
-				<div class="col-xl-8">
-					<div class="video-container">
-						<?php the_field('video_embed'); ?>
-					</div>	
-				</div>
-			</div>	
-		</div><!--container-fluid-->
+	<section class="homepage-video">		
+		<div class="row">
+			<div class="col-xl-7 video-bg">
+				<div class="video-container ">
+					<?php the_field('video_embed'); ?>
+				</div>	<!--video-container-->
+			</div><!--col-xl-8-->			
+			<div class="col-xl-5 video-description">
+				<?php the_field('video_description'); ?>
+			</div><!--video-description-->
+		</div><!--row-->	
+	
 	</section><!--homepage-video-->	
 	<?php } ?>
 	<div class="container-homepage">

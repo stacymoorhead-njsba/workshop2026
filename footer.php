@@ -22,18 +22,18 @@
 								<div class="div2021">
 									<h3>Workshop 2021</h3>
 									<p><strong>Best Nonprofit Event</strong></p>
-									<a href="https://eventeerawards.vfairs.com/winners/"><img src="/wp-content/themes/workshop/img/badge.png" alt="Eventeer Awards 2022 runner up badge" /></a>
+									<a href="https://eventeerawards.vfairs.com/winners/"><img src="/wp-content/themes/workshop2026/img/badge.png" alt="Eventeer Awards 2022 runner up badge" /></a>
 								</div>
 								<div class="div2022">
 									<h3>Workshop 2022</h3>
-									<a href="https://www.associationtrends.com/trendy-awards/" target="_blank"><img src="/wp-content/themes/workshop/img/trendy-logo-2023.png" alt="Association Trends, Trendy 2024 logo" /></a>
+									<a href="https://www.associationtrends.com/trendy-awards/" target="_blank"><img src="/wp-content/themes/workshop2026/img/trendy-logo-2023.png" alt="Association Trends, Trendy 2024 logo" /></a>
 									<p><strong>Gold</strong> — Convention Promotion Package</p>
 									<p><strong>Gold</strong> — Exhibitor Sales Kit</p>
 								</div>	
 								<div class="div2024">
 									<h3>Workshop 2024</h3>
 									<p><strong>Honoree</strong></p>
-									<a href="https://tsefastest50.com/honorees/" target="_blank"><img src="/wp-content/themes/workshop/img/F50--Tile-Blue-Horizontal.jpg" alt="" /></a>
+									<a href="https://tsefastest50.com/honorees/" target="_blank"><img src="/wp-content/themes/workshop2026/img/F50-2025-Tile-Blue-Horizontal.jpg" alt="" /></a>
 								</div>
 							</div><!--d-flex-->	
 						</div><!--award-->

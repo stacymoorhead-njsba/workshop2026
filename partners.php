@@ -11,7 +11,7 @@ Template Name: Industry Partners
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main clouds">
 		<?php include 'secondary-page-header.php'; ?>
 		<div class="container-fluid">
 			<div class="row">
