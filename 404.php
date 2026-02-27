@@ -12,8 +12,6 @@ get_header();
 
 	<main id="primary" class="site-main">
 	<section class="header-secondary" id="hero">
-		<img class="pipe" src="/wp-content/themes/workshop2026/img/ws24-homepage-elements_pipe2.svg" alt="super mario bros. style pipe with pixel student popping out ">
-		<img class="boy" src="/wp-content/themes/workshop2026/img/ws24-homepage-elements_boy.svg" alt="pixel style boy holding a paint pallet">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-12">

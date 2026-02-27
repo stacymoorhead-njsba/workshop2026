@@ -18,14 +18,21 @@
 	position: relative;
 
 	@media all and (orientation:portrait) {
-		height: 60vh;
+		//height: 60vh;
 	}
 	@media all and (max-width: 600px) {
-		height:600px !important;
+		//height:600px !important;
 	}	
 	
 	.banner {
 		margin: 0 2em;
+		.mobile {
+			display: none;
+		}
+		@media all and (orientation:portrait) {
+			.desktop{display: none;}
+			.mobile{display: block;}
+		}
 	}
 
 	.call-to-action-home {
@@ -33,7 +40,7 @@
 		max-width: 800px;
 		min-width: 600px;
 		position: relative;
-		bottom: 25%;		
+		top: 25%;		
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -76,15 +83,24 @@
 		.btn {
 			margin:auto 1em;	
 		}
-		@media all and (max-width: 991px) and (orientation:portrait) {
+		@media all and (orientation:portrait) {
 			//font-size: .8em;
-		}	
-		@media all and (max-width: 600px) {
-			position: absolute;
-			top: 50%;
+			flex-direction: column;
+			display: relative;
 			bottom: unset;
 			min-width:unset;
-			margin: 0 1em !important;
+			padding: 1em 4em;
+			//border-radius: 2em;
+			margin: 1em !important;	
+			.text-align-left {text-align: center;}
+			.btn {margin: 1em 0 0 0;}
+					
+			//bottom: 0;
+		}	
+		@media all and (max-width: 600px) {
+			//position: absolute;
+			//top: 50%;
+
 		}			
 	}
 	.call-to-action-position {
@@ -97,7 +113,7 @@
     	    -ms-flex-pack: center;
     	        justify-content: center;
 		@media all and (max-width: 600px) {
-			//height: 300px !important;
+			height: 300px !important;
 		}			
 	}
 	
@@ -277,8 +293,9 @@
 	        align-items: center;
 	padding: 1.5em;
 	font-family: $font__main;
-	@media all and (max-width: 600px) {
+	@media all and (max-width: 800px) {
 		font-size: .8em;
+		flex-wrap:wrap;
 	}	
 	a {
 		border: 0;
@@ -291,9 +308,11 @@
 		}
 	}
 	figure {
-		width: 40%;
-		margin: 1em;
-		padding: 1em;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 45%;
+		margin: .5em 0;
+		padding: 1em 2em 1em 1em;
 		background-color: $color__blue;  
 		border-radius: 9999px;
 		&:hover {
@@ -302,17 +321,22 @@
   			-webkit-animation-duration: 1s; 
   			        animation-duration: 1s; 
 		}
-		@media all and (max-width: 600px) {
-			width: 80%;
+		@media all and (max-width: 1000px) {
+			width: 100%;
+			padding-right: 2em;
 		}	
 	}
 	p {
-		font-size: 1em;
+		//font-size: 1em;
 		margin-left: 63px;
 		color: white;
 		font-weight: 200;
 		margin-bottom: 0;
+		margin-left: 140px;
 		line-height: 1.25em;
+		@media all and (max-width: 1000px) {
+			margin-left: 80px;
+		}					
 	}
 	img {
 		width: 100px;
@@ -320,18 +344,24 @@
 		float: left;
 		margin-right: 1em;
 		margin-left:1em;
+		@media all and (max-width: 1000px) {
+			width: 50px;
+		}			
 	}
 	figcaption {
 		//margin-top:.5em;
 		font-weight: 700;
 		margin-bottom: .5em;
-		margin-left: 63px;
+		margin-left: 140px;
 		font-family: $font__main; 
 		color: $color__lime-green;
 		text-transform: uppercase;
 		letter-spacing: 0;
-		font-size: 1.4em;
+		//font-size: 1.4em;
 		line-height: 1.1em;
+		@media all and (max-width: 1000px) {
+			margin-left: 80px;
+		}			
 	}
 }
 
