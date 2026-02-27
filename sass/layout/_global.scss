@@ -29,6 +29,7 @@
 		z-index: 9999;
 		display:block;
 		position: relative; 
+		margin: .5em 0;
 		font-size: 5em;
 		-webkit-animation: bounceInDown;
 		animation: bounceInDown; 
@@ -40,11 +41,7 @@
 		}		
 	}
 }
-.content-page {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-}
+
 .content-bg {
 	position: relative;
 	background: white;
@@ -173,7 +170,7 @@
 }
 
 .footer {
-	margin-top: 0;
+	margin-top: 5em;
     background: $color__navy;  
     color: $color__off-white;
     padding: 2em 0;

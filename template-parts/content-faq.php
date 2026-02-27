@@ -9,10 +9,24 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="content-bg" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php workshop_post_thumbnail(); ?>
-
+	<?php
+	$call_to_action = get_field('call_to_action');
+	if( $call_to_action['headline'] || $call_to_action['description'] || $call_to_action['call_to_action_button_url'] || $call_to_action['call_to_action_button_link_text'] ) { ?>
+	<div class="call-to-action fade-in-4s">
+		<div class="call-to-action-text <?php 
+			if( $call_to_action['call_to_action_button_url'] && $call_to_action['call_to_action_button_link_text'] ) { ?>text-align-left <?php } ?>">
+			<h2><?php echo esc_html( $call_to_action['headline'] ); ?></h2>
+			<p><?php echo esc_html( $call_to_action['description'] ); ?></p>
+		</div><!--call-to-action-text-->
+		<?php 
+		if( $call_to_action['call_to_action_button_url'] && $call_to_action['call_to_action_button_link_text'] ) { ?>
+		<a role="button" class="btn call-to-action-btn" href="<?php echo esc_url( $call_to_action['call_to_action_button_url'] ); ?>"><?php echo esc_html( $call_to_action['call_to_action_button_link_text'] ); ?></a>
+		<?php } ?>
+	</div><!--call-to-action-->	
+	<?php } ?>	
 	<div class="entry-content">
 		<?php
 		the_content();

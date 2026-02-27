@@ -43,14 +43,22 @@
 	box-shadow: none;
 	margin: 0;
 	color: $color__text-main !important;
+    background: $color__off-white;
+    border-radius: 9999px;
+    line-height: 1em;	
+	-webkit-transition: background-color 0.6s ease;
+	-o-transition: background-color 0.6s ease;
+	transition: background-color 0.6s ease;	
 	&:hover, &:active, &:focus {
-		color: $color__teal !important;
-		background: transparent; 
+		background-color: $color__gold; 
 	}
 	&:hover {
 		transition: none;
 	}
 	
+}
+.accordion-header {
+    margin: .5em;
 }
 
 

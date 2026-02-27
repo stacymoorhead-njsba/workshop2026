@@ -89,13 +89,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<?php if(get_the_title() === 'Want to Exhibit?') { ?>
-	<script>
-	document.addEventListener( 'wpcf7mailsent', function( event ) {
-	  location = 'https://workshop.njsba.org/wp-content/themes/workshop/-ws-prospectus.pdf';
-	}, false );
-	</script>
 
-<?php } ?>
+
 </body>
 </html>
