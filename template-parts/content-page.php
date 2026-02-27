@@ -65,5 +65,6 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
+		<img src="/wp-content/themes/workshop2026/img/ws26website_balloon_line.svg" class="balloon-line" alt="blue and gold hot air balloon with a pencil for a tip drawing a vertical dotted pink line down to a red gps marker">
 </article><!-- #post-<?php the_ID(); ?> -->
 

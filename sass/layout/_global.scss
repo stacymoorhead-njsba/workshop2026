@@ -20,12 +20,13 @@
 	text-align:center;
 	padding: 0;
 	@media all and (max-width: 991px) and (orientation:portrait)  {	  
-		min-height: 350px;
+		//min-height: 350px;
 	}	
 	.spotlight {
 		width:125%;
 	}
 	h1 {
+		z-index: 9999;
 		display:block;
 		position: relative; 
 		font-size: 5em;
@@ -36,11 +37,13 @@
 		@media all and (max-width: 991px) and (orientation:portrait)  {	
 			font-size: 3em;
 			//top: 200px;
-		}	
-		@media all and (max-width: 991px) {
-			top: 150px;
 		}		
 	}
+}
+.content-page {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 .content-bg {
 	position: relative;
@@ -80,16 +83,23 @@
 
 .text-align-left {text-align:left;}  
 
-//.cta-padding {padding-top: 5em !important;}  
-
 .balloon-line {
 	z-index: 1000;
 	position: absolute;
-	right: 3%;
-	top: 150px;
+	right: -100px;
+	top: -300px;
 	width: 200px;
 	height: auto;
+	@media all and (max-width: 800px) {
+		display: none;
+	}
 }
+
+.cta-padding {
+	@media all and (max-width: 800px) {
+		padding-top: 5em !important;
+	}
+}  
 
 .call-to-action {  
 	max-width: 1000px;
@@ -108,8 +118,18 @@
 	padding: 1em 3em;
 	margin-bottom: 2em;
 	text-align: center;
+	@media all and (max-width: 800px) and (orientation:portrait) {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: 1em 4em;
+		font-size: .8em;
+		.text-align-left {text-align: center;}
+		.btn {margin: 1em 0 0 0;}
+		}				
 	@media all and (max-width: 800px) {
-		min-width: unset;
+		//min-width: unset;
 	}
 	h2 {
 		font-size: 1.4em;
@@ -215,7 +235,7 @@
 }
 
 .award {
-	background:rgba(0,0,0,0.25);
+	background:rgba(255,255,255,0.05);
 	border-radius: 9999px;
 	padding: 1em 5em 2em 5em;
 	img {

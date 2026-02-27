@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main clouds">
+	<main id="primary" class="site-main">
 		<?php include 'secondary-page-header.php'; ?>
 
 		<div class="container">
