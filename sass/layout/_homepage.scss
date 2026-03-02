@@ -410,6 +410,9 @@
 		@media all and (max-width: 1200px) {
 			margin-bottom: 5em;
 		}
+		@media all and (max-width: 600px) {
+			margin-bottom: 2em;
+		}	
 }
 .homepage-video {
 	position: relative;
@@ -452,12 +455,20 @@
 	@media all and (orientation:portrait) {
 		background-size: 300%;
 	}
-	@media all and (max-width: 600px) {
-		//padding: 5em 2em 2em 2em;
+	@media all and (max-width: 1200px) {
+		padding: 5em 2em 2em 2em;
 		//margin-top: -70px;
 	}
 	
 	.video-description {
+		a { 
+			color: $color__off-white;
+			font-weight: 800;
+			&:hover, &:active, &:focus {
+				color: white;
+				border-bottom: none;
+			}	
+		}
 		padding-left: 2em;
 		p {
 		@media all and (max-width: 600px) {
