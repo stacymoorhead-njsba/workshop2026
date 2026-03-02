@@ -53,6 +53,7 @@
 		        box-sizing: border-box;
 		background-color: rgba(255,255,255,0.95);
 		//background-color: rgba(0,67,106,0.95);
+		box-shadow: 1em 1em 0 0 $color__bright-red;
 		border: none !important;
 		border-radius: 9999px;
 		padding: 1em 2em;
@@ -66,7 +67,7 @@
 			font-size: 1.4em;
 			text-transform: none;
 			letter-spacing: normal;
-			color: $color__light-red;
+			color: $color__light-blue;
 			margin-top: 0;
 			margin-bottom:.5em;
 		}
@@ -76,6 +77,9 @@
 			font-family: $font__main;
 			font-weight: 300;
 			font-size: 1.2em;
+		}
+		a {
+			color: $color__navy !important;
 		}
 		.call-to-action-text {
 			width:100%;
@@ -88,6 +92,7 @@
 		}	
 		.btn {
 			margin:auto 1em;	
+			background: $color__lime-green;
 		}
 		@media all and (orientation:portrait) {
 			font-size: .7em;

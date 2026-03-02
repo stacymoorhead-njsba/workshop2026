@@ -42,29 +42,30 @@
 	<?php
 	$faqs = get_field('faqs');
 	$i = 1;
-	if( $faqs ) { ?>			
+	if( have_rows('faqs') ) { ?>			
 	<div class="row">
 		<div class="col-md-12">
 			<div class="faq">	
-				<?php
-				foreach( $faqs as $faq ) { 		
-					$question = $faq['question'];
-					$answer = $faq['answer'];
-				?>				
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingOne-<?php echo $i;?>">
-					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-<?php echo $i;?>" aria-expanded="true" aria-controls="collapseOne-<?php echo $i;?>">
-						<?php echo esc_html( $question ); ?>
-					  </button>
-					</h2>
-					<div id="collapseOne-<?php echo $i;?>" class="accordion-collapse collapse" aria-labelledby="headingOne-<?php echo $i;?>" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<?php echo $answer; ?>
-						 </div><!--accordion-body-->
-					</div><!--accordion-collapse-->
-				</div><!--accordion-item-->
-				<?php $i++; 
-				} ?>
+				<?php while( have_rows('faqs')): the_row(); ?>
+					<h2 id="<?php the_sub_field('anchor'); ?>"><?php the_sub_field('headline'); ?></h2>
+					<?php if( have_rows('section')): 
+						while( have_rows('section') ): the_row();?>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne-<?php echo $i;?>">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-<?php echo $i;?>" aria-expanded="true" aria-controls="collapseOne-<?php echo $i;?>">
+								<?php the_sub_field('question'); ?>
+							  </button>
+							</h2>
+							<div id="collapseOne-<?php echo $i;?>" class="accordion-collapse collapse" aria-labelledby="headingOne-<?php echo $i;?>" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<?php the_sub_field('answer'); ?>
+								 </div><!--accordion-body-->
+							</div><!--accordion-collapse-->
+						</div><!--accordion-item-->
+						<?php $i++;  
+						endwhile; 
+					endif; 
+				endwhile; ?>
 			</div><!--faq-->
 		</div><!--col-md-12-->	
 	</div><!--row-->

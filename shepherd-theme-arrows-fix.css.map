@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQE,ulBAA+B,CAC7B,OAAO,CAAE,IAAI",
+"sources": ["../../upgrade/ml-slider.3.106.0/ml-slider/admin/assets/tether-shepherd/src/css/shepherd-theme-arrows-fix.sass"],
+"names": [],
+"file": "shepherd-theme-arrows-fix.css"
+}
