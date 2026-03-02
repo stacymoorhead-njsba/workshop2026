@@ -148,6 +148,10 @@
 			border:none;
 			outline:none;
 		}
+		@media all and (max-width: 800px) {
+			left: 10%;
+			bottom: 18%
+		}
 
 		/*@media all and (max-width: 991px) {
 			left: auto;
@@ -157,8 +161,7 @@
 			left: auto;
 			bottom: 17%;
 		}	
-		@media all and (max-width: 600px) {
-			display: none;
+
 		}	
 		@media all and (orientation:portrait) {
 			display: none;
