@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGQ,+HAAoB,CAChB,UAAU,CAAE,UAAU,CAE9B,eAA0B,CACtB,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,IAAI,CAEb,2BAAwB,CACpB,OAAO,CAAE,KAAK",
-"sources": ["../../upgrade/ml-slider.3.106.0/ml-slider/admin/assets/tether/src/css/helpers/_tether.sass"],
-"names": [],
-"file": "tether.css"
-}
