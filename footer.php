@@ -33,7 +33,7 @@
 								<div class="div2024">
 									<h3>Workshop 2024</h3>
 									<p><strong>Honoree</strong></p>
-									<a href="https://tsefastest50.com/honorees/" target="_blank"><img src="/wp-content/themes/workshop2026/img/F50-2025-Tile-Blue-Horizontal.jpg" alt="" /></a>
+									<a href="https://tsefastest50.com/honorees/" target="_blank"><img src="/wp-content/themes/workshop2026/img/F50-2025-Tile-Blue-Horizontal.jpg" alt="Trade Show Executive's Fastes 50 logo" /></a> 
 								</div>
 							</div><!--d-flex-->	
 						</div><!--award-->
