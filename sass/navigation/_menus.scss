@@ -132,6 +132,7 @@
 	text-wrap:nowrap;
     @media all and (max-width: 1200px) {
 		flex-wrap: wrap;
+		margin: 1em .75em auto .75em;
 		.btn {
 			margin-bottom: .5em;
 		}
@@ -163,9 +164,6 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-		background-image:url("img/ws-website-graphics_curtain.svg"); 
-		background-repeat:repeat;
-		background-size: 500px auto;
 		background-color: $color__light-cyan;   
 		a {
 			color: $color__navy;
