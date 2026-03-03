@@ -7,11 +7,6 @@
 	}
 }
 
-.ticket, .call-to-action, .kids, .spotlight, .bottom-spotlight {
-	@media all and (max-width: 600px) and (orientation:portrait) {
-		animation:disabled !important;
-	}
-}
 .hero {
 	//height: 100vh;
 	//overflow: hidden;
@@ -84,6 +79,7 @@
 		.call-to-action-text {
 			width:100%;
 			margin: auto 2em;
+			text-align: center;
 		}
 		.btn-center {
 			width:100%;

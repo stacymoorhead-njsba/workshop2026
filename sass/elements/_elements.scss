@@ -74,10 +74,14 @@ h3, h4, h5, h6 {
 
 }
 
+b, strong {
+	font-weight: 800;
+}
+
 blockquote, q {
 	//color: $color__dark-red;
 	font-style: italic;
-	border-left: solid 3px $color__light-cyan;
+	border-left: solid 3px $color__light-teal;
 	padding-left: 1em;
 	margin: 2em;
 	quotes: "" "";
@@ -89,7 +93,7 @@ blockquote, q {
 }
 
 hr {
-	background-color: $color__dark-coral;
+	background-color: $color__light-teal;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;

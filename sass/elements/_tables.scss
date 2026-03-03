@@ -1,17 +1,25 @@
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+	border: 0;
 }
 
 thead {
-	color: $color__dark-teal;
+	color: $color__blue;
 	font-weight: 700;
 	text-transform: uppercase;
-	border-bottom: 3px solid $color__gold !important; 
+	border-top: none;
+	border-bottom: 3px solid $color__lime-green !important; 
 }
 
 tr {
-	border-bottom: 2px solid $color__gold;
+	border-bottom: 2px solid $color__lime-green;
+}
+
+.wp-block-table td, .wp-block-table th, .wp-block-table td, .wp-block-table th {
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
 }
 
 td, th {

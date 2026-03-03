@@ -18,7 +18,7 @@ input[type="submit"] {
 	border-radius: 0;
 
 	&:hover {
-		background: $color__light-red;
+		background: $color__bright-red;
 		-webkit-animation: pulse !important;
 				animation: pulse !important; 
 		-webkit-animation-duration: 1s !important; 
@@ -29,7 +29,7 @@ input[type="submit"] {
 	&:focus {
 		border: none;
 		box-shadow: none;
-		background: $color__light-red;
+		background: $color__bright-red;
 	}
 	a {
 		&:active {
@@ -76,7 +76,7 @@ input[type="submit"] {
 }
 
 .is-style-outline {
-	font-family: $font__fancy;
+	font-family: $font__main;
 	text-transform: uppercase;
 	border-radius: 0 !important;
 	background: transparent !important;
@@ -160,9 +160,6 @@ input[type="submit"] {
 	}
 
 	&:hover {
-		border-width: 2px;
-	border-stye: solid;
-	border-image: linear-gradient(-45deg, $color__dark-gold, $color__light-gold, $color__dark-gold) 1;
 	-webkit-animation: pulse !important;
 			animation: pulse !important; 
 	-webkit-animation-duration: 1s !important; 
@@ -177,7 +174,7 @@ a.call-to-action-btn {
 	color: white;
 	border: none !important;
 	&:hover {
-		background: $color__light-red;
+		background: $color__bright-red;
 		border: none !important;
 	}
 }

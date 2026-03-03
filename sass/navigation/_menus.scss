@@ -88,6 +88,7 @@
 }
 
 .dropdown-menu {
+	z-index:9999;
 	background-color: $color__off-white;
 	border-radius: 0;
 	font-size: .9em;
