@@ -35,6 +35,11 @@
 									<p><strong>Honoree</strong></p>
 									<a href="https://tsefastest50.com/honorees/" target="_blank"><img src="/wp-content/themes/workshop2026/img/F50-2025-Tile-Blue-Horizontal.jpg" alt="Trade Show Executive's Fastes 50 logo" /></a> 
 								</div>
+								<div class="div2025">
+									<h3>Workshop 2025</h3>
+									<p><strong>Exhibitor Sales Kit</strong></p>
+									<img src="/wp-content/themes/workshop2026/img/2026-trendy-graphics.png" alt="Trade Show Executive's Fastes 50 logo" /> 
+								</div>								
 							</div><!--d-flex-->	
 						</div><!--award-->
 						<?php
@@ -89,7 +94,14 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<?php if(get_the_title() === 'Want to Exhibit?') { ?>
+	<script>
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+	  location = 'https://workshop.njsba.org/wp-content/themes/workshop2026/2026-ws-prospectus.pdf';
+	}, false );
+	</script>
 
+<?php } ?>
 
 </body>
 </html>

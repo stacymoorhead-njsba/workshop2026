@@ -277,6 +277,16 @@
 			margin-left: 0;
 		}		
 	}
+	.div2025 {
+		margin-left: 1.5em;
+		img {
+			width: 100%;
+			max-width: 150px;
+		}
+		@media all and (max-width: 600px) {
+			margin-left: 0;
+		}		
+	}	
 	@media all and (max-width: 600px) {
 		padding: 5em;  
 	}
