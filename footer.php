@@ -38,7 +38,7 @@
 								<div class="div2025">
 									<h3>Workshop 2025</h3>
 									<p><strong>Exhibitor Sales Kit</strong></p>
-									<img src="/wp-content/themes/workshop2026/img/2026-trendy-graphics.png" alt="Trade Show Executive's Fastes 50 logo" /> 
+									<img src="/wp-content/themes/workshop2026/img/2026-trendy-graphic.png" alt="2026 Trendy Awards Silver Winner Badge" /> 
 								</div>								
 							</div><!--d-flex-->	
 						</div><!--award-->
