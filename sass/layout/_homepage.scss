@@ -21,13 +21,79 @@
 	
 	.banner {
 		margin: 0 2em;
+		//height: 100vh;
+		width: auto;
 		.mobile {
 			display: none;
 		}
+		.banner-graphic {
+			padding: 0 5em;
+			width: 100%;
+			position: absolute;
+			top: 15%;
+			left: 0;
+			img {
+				height: 600px;
+			}
+			
+		}
+		.banner-graphic-mobile {
+			display: none;
+		}
+		.date {
+			height: 100px;
+			position: absolute;
+			left: 0;
+			bottom: -75px;
+			text-align: left;
+			font-size: 2em;
+			letter-spacing: 1px;
+			line-height: 1em;
+			margin: 0 0 2em 2em; 
+			text-transform: uppercase;
+			color: white;
+			@media all and (orientation:portrait) {
+				font-size: 1.5em;
+				margin: 0 0 .5em 2em; 
+			}
+		}
+		.co-sponsor {
+			height: 100px;
+			position: absolute;
+			right: 0;
+			bottom: -75px; 
+			text-align: right;
+			font-size: 1.4em;
+			letter-spacing: 1px;
+			line-height: 1em;
+			margin: 0 2em 2em 0; 
+			text-transform: uppercase;
+			color: white;
+			span {
+				font-weight: 200;
+				font-size: .6em;
+			}
+			@media all and (orientation:portrait) {
+				margin: 0 2em 0 0; 
+				font-size: .9em;
+			}
+		}		
 		@media all and (orientation:portrait) {
 			margin-top: -100px;
 			.desktop{display: none;}
+			.banner-graphic{display:none;}
 			.mobile{display: block;}
+			.banner-graphic-mobile {
+				display: block;
+				padding: 0 5em;
+				width: 100%;
+				position: absolute;
+				top: 25%;
+				left: 0;
+				img {
+					height: 600px;
+				}
+			}
 		}
 		@media all and (max-width: 600px) and (orientation:portrait) {
 			margin-top: -75px;

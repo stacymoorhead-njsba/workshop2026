@@ -85,8 +85,8 @@
 	position: absolute;
 	right: -100px;
 	top: -300px;
-	width: 200px;
-	height: auto;
+	width: 250px;
+	height: 800px;
 	@media all and (max-width: 800px) {
 		display: none;
 	}
@@ -139,6 +139,7 @@
 		color: white;
 		font-family: $font__main;
 		font-size: 1.2em;
+		line-height: 1.3em;
 	}
 	.btn {
 		padding: .25em 1em;
