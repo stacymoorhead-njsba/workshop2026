@@ -35,38 +35,49 @@
 			img {
 				height: 600px;
 			}
-			
+			@media all and (min-width: 850px) and (max-width: 1250px) {
+				top: 0;
+			}	
 		}
 		.banner-graphic-mobile {
 			display: none;
+			@media all and (orientation:portrait) and (max-width: 500px) {
+				top: 30% !important;
+				padding: 0 4em !important;
+			}	
+			@media all and (orientation:portrait) and (max-width: 450px) {
+				top: 35% !important;
+			}			
+		}
+		.date-co-sponsor {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: flex-end;
+			justify-content: space-between;
+			color: white;
+			margin-top: -4em;
+			@media all and (orientation:portrait) {
+				margin-top: -2em;
+			}
 		}
 		.date {
-			height: 100px;
-			position: absolute;
-			left: 0;
-			bottom: -75px;
+			margin-left: .75em;
 			text-align: left;
 			font-size: 2em;
 			letter-spacing: 1px;
 			line-height: 1em;
-			margin: 0 0 2em 2em; 
 			text-transform: uppercase;
 			color: white;
 			@media all and (orientation:portrait) {
 				font-size: 1.5em;
-				margin: 0 0 .5em 2em; 
-			}
+			}			
 		}
 		.co-sponsor {
-			height: 100px;
-			position: absolute;
-			right: 0;
-			bottom: -75px; 
+			margin-right: .75em;
 			text-align: right;
 			font-size: 1.4em;
 			letter-spacing: 1px;
 			line-height: 1em;
-			margin: 0 2em 2em 0; 
 			text-transform: uppercase;
 			color: white;
 			span {
@@ -74,10 +85,9 @@
 				font-size: .6em;
 			}
 			@media all and (orientation:portrait) {
-				margin: 0 2em 0 0; 
 				font-size: .9em;
-			}
-		}		
+			}			
+		}
 		@media all and (orientation:portrait) {
 			margin-top: -100px;
 			.desktop{display: none;}
@@ -177,7 +187,7 @@
 			-ms-flex-direction: column;
 			flex-direction: column;
 			padding: 1em 4em;
-			.text-align-left {text-align: center;}
+			.text-align-left {text-align: center !important;}
 			.btn {margin: 1em 0 0 0;}
 			//position: absolute;
 			//top: 50%;
@@ -219,118 +229,9 @@
 			left: 10%;
 			bottom: 18%
 		}
-
-		/*@media all and (max-width: 991px) {
-			left: auto;
-			bottom: 12%;
-		}	
-		@media all and (max-width: 991px) and (orientation:portrait) {
-			left: auto;
-			bottom: 17%;
-		}	
-
-		}	
-		@media all and (orientation:portrait) {
-			display: none;
-		}*/
-	}
-	@-webkit-keyframes scroll-ticket {
-	  from {opacity: 0.0;}
-	  to {opacity: 0.1;}
-	}
-	.ticket-fade{
-		-webkit-animation-name: scroll-ticket;
-		-webkit-animation-duration: 2.5s;
-		-webkit-animation-timing-function:ease-in;
-	}	
-	
-	.ticket {
-		position: absolute;
-		bottom: 40%;
-		left: 15%;
-		width: 300px;
-		height: auto;
-		animation: ticket 1s normal forwards ease-in-out;
-		animation-delay: 3s;
-		opacity: 0;
-		img {
-			width:300px;
-		}
-		@media all and (max-width: 991px) {
-			right: 10%;
-			left: auto;
-			top: 30%;
-			width: 200px;
-		}	
-	
-		@media all and (max-width: 600px) {
-			position: absolute;
-			width: 150px;
-			right: 10%;
-			top: 25%;
-			opacity: 1;
-		}	
-	}	
-	@keyframes ticket {
-	  0% {
-		transform: translate(0, -1000px);
-	  }
-
-	  100% {
-		opacity: 1;
-		transform: translate(0, 0);
-	  }
-	}	
-
-}
-	
-.spotlight {
-	z-index: 100;
-	width: 100%;
-	height: auto;
-	position:relative;
-	-webkit-animation: bounceInDown;
-	animation: bounceInDown; 
-	-webkit-animation-duration: 1s; 
-	animation-duration: 1s; 
-	img {
-		width: 100%;
-		height: auto;
-		position:relative;
 	}
 }
-.kids {
-	z-index: 0;
-	position: relative !important;
-	bottom: -5%;
-	width: 100%;
-	height: auto;
-	position:relative;
-	-webkit-animation: bounceInLeft;
-	animation: bounceInLeft; 
-	-webkit-animation-duration: 3s; 
-	animation-duration: 3s; 
-}
-.bottom-spotlight {
-	z-index: 0;
-	position: relative !important;
-	bottom: 15%;
-	width: 100%;
-	height: auto;
-	position:relative;
-	-webkit-animation: bounceInUp;
-	animation: bounceInUp; 
-	-webkit-animation-duration: 5s; 
-	animation-duration: 5s; 
-	@media all and (max-width: 600px) {
-		position: absolute;
-		top: -5;
-	}	
-	@media all and (orientation:portrait) {
-		position: absolute;
-		bottom: auto;
-	}	
-}
+	
 .entry-content-home {
 	position: relative;
 	z-index: 0;
@@ -487,6 +388,7 @@
 .homepage-video {
 	position: relative;
 	overflow:visible;
+	margin-top: 2em;
 	padding: 6em;
 	background: $color__light-blue;
 	background-image:url("img/ws26website_compass.svg"); 

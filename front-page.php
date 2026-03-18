@@ -39,11 +39,19 @@ get_header();
 			</div><!--banner-graphic-->	
 			<img class="mobile" src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner_bg_mobile.svg" alt="vintage rolled out map with the outline of land. There are blue and gold hot air balloons with pencil points for a basket floating along a coral-colored dotted line. There are two sketched sillouttes of student explorers waling along the line. In the center, the words Workshop 2026 are writtin in a cursive font. To the right of that a larger hot air balloon floats with a banner containing the tagline Charting the Path, Empowering Journeys.">		
 			<img class="banner-graphic-mobile" src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner_graphics_mobile.svg">
-			<div class="date">
+			<div class="date-co-sponsor">
+				<div class="date">
 				<strong>Oct. <br>19-20</strong> 			
-			</div><!--date-->	
+				</div>	
+				<div class="co-sponsor">
+					<span>Co-sponsored by</span> <br><strong>NJASA &amp; NJASBO</strong> 	
+				</div>
+			</div><!--date-co-sponsor-->	
+			<!--<div class="date">
+				<strong>Oct. <br>19-20</strong> 			
+			</div>	
 			<div class="co-sponsor">
-				<span>Co-sponsored by</span> <br><strong>NJASA &amp; NJASBO</strong> 			
+				<span>Co-sponsored by</span> <br><strong>NJASA &amp; NJASBO</strong> 	
 			</div><!--date-->			
 		</div><!--banner-->	
 		<div class="scroll-down">
