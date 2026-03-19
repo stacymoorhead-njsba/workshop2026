@@ -1,4 +1,6 @@
-jQuery( document ).ready( function( $ ) {	
+
+
+/*jQuery( document ).ready( function( $ ) {	
 	$("#scene").addClass("animation-fade-in");
 	function checkElementLocation() {
 	  var $window = $(window);

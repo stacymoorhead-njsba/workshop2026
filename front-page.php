@@ -10,7 +10,15 @@ Template Name: Front Page
 get_header();
 ?>
 <main id="primary" class="site-main">
-
+	<svg id="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 2500" strokeLinecap="round" strokeMiterlimit="1">
+		<defs>
+		<linearGradient id="myGradient" gradientTransform="rotate(90)">
+		  <stop offset="5%" stop-color="#ec174c" />
+		</linearGradient>
+	  </defs>
+		<path id="line-base" d="M439.2-2.9c21.3,42.4,7.1,118.4-27.8,150.7s-81.9,47.3-127.7,59.6c-45.9,12.2-93.3,22.9-133.1,48.8-57,37-92.4,105-90.2,172.9,2.2,67.9,42.1,133.4,101.3,166.6,36,20.2,77.9,28.9,111.7,52.5s57.3,71.6,34.8,106.1c-35.1,53.6-129,15-177,57.4-32,28.2-27.8,81.5-4.4,117.1,23.4,35.6,60.9,59,94.4,85.3,112.6,88.2,189.1,221.2,208.8,362.9,7.1,51,5.6,107.6-26.7,147.8-40.1,49.9-111.5,57-173.8,71.6-62.3,14.6-132.5,55.5-130.3,119.4,1.8,53.6,55,90.8,106.1,107.1,51.1,16.3,107.5,22,150.5,54.1,80.9,60.4,73.2,195.3,2.6,267.6-38.8,39.7-90.2,64-139.5,89.5-49.3,25.5-99.3,54.4-131.3,99.7-32,45.4-30.9,118.1,3.5,161.7" fill="none" stroke="#f06c71" stroke-width="3" stroke-dasharray="15" />
+		<path class="line-running" stroke="url('#myGradient')"  pathLength="1" d="M439.2-2.9c21.3,42.4,7.1,118.4-27.8,150.7s-81.9,47.3-127.7,59.6c-45.9,12.2-93.3,22.9-133.1,48.8-57,37-92.4,105-90.2,172.9,2.2,67.9,42.1,133.4,101.3,166.6,36,20.2,77.9,28.9,111.7,52.5s57.3,71.6,34.8,106.1c-35.1,53.6-129,15-177,57.4-32,28.2-27.8,81.5-4.4,117.1,23.4,35.6,60.9,59,94.4,85.3,112.6,88.2,189.1,221.2,208.8,362.9,7.1,51,5.6,107.6-26.7,147.8-40.1,49.9-111.5,57-173.8,71.6-62.3,14.6-132.5,55.5-130.3,119.4,1.8,53.6,55,90.8,106.1,107.1,51.1,16.3,107.5,22,150.5,54.1,80.9,60.4,73.2,195.3,2.6,267.6-38.8,39.7-90.2,64-139.5,89.5-49.3,25.5-99.3,54.4-131.3,99.7-32,45.4-30.9,118.1,3.5,161.7" fill="none" stroke="#000" stroke-width="3" />
+	</svg>
 	<h1 style="display:none;">Welcome to Workshop </h1>
 	<section class="hero" id="hero">
 			<?php
@@ -38,7 +46,7 @@ get_header();
 				<img src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner_graphics.svg">
 			</div><!--banner-graphic-->	
 			<img class="mobile" src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner_bg_mobile.svg" alt="vintage rolled out map with the outline of land. There are blue and gold hot air balloons with pencil points for a basket floating along a coral-colored dotted line. There are two sketched sillouttes of student explorers waling along the line. In the center, the words Workshop 2026 are writtin in a cursive font. To the right of that a larger hot air balloon floats with a banner containing the tagline Charting the Path, Empowering Journeys.">		
-			<img class="banner-graphic-mobile" src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner_graphics_mobile.svg">
+			<img class="banner-graphic-mobile" src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner_graphics_mobile.svg">		
 			<div class="date-co-sponsor">
 				<div class="date">
 				<strong>Oct. <br>19-20</strong> 			
