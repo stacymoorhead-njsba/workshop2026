@@ -89,10 +89,17 @@
 			}			
 		}	
 		.date-co-sponsor {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-wrap: nowrap;
-			align-items: flex-end;
-			justify-content: space-between;
+			-ms-flex-wrap: nowrap;
+			    flex-wrap: nowrap;
+			-webkit-box-align: end;
+			-ms-flex-align: end;
+			        align-items: flex-end;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			        justify-content: space-between;
 			color: white;
 			margin-top: -4em;
 			@media all and (orientation:portrait) {

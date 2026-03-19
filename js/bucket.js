@@ -1,5 +1,4 @@
-
-
+///////////////Fades homepage hero in and out on scroll
 /*jQuery( document ).ready( function( $ ) {	
 	$("#scene").addClass("animation-fade-in");
 	function checkElementLocation() {
