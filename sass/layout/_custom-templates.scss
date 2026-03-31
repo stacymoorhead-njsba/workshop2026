@@ -167,7 +167,12 @@
 }
 
 /*--------MEET THE LEADERSHIP--------*/
-
+.leadership-margin {
+	margin-top: -200px;
+	@media all and (max-width: 991px) {
+		margin-top:-100px;
+	}	
+}
 .leadership {
 	margin-top: 5em;
 	@media all and (max-width: 991px) {
@@ -191,14 +196,11 @@
 	margin:50px 1em;
 	width: 250px;
 	border-radius:0;
-	border: 3px $color__border-button solid;
 	padding: 1em;
 	background: white;
 	text-align: center;
 	img {
-		@include gradient(-45deg, $gold-gradient);
 		width: 100px;
-		border: 3px $color__border-button solid;
 		border-radius: 50%;
 		margin-bottom: 1em;
 		margin-top: -50px;
@@ -212,8 +214,9 @@
 		line-height: 1.25em !important;
 	}
 	.name {
-		font-family: $font__fancy;
-		color: $color__teal;
+		color: $color__bright-red;
+		text-transform: uppercase;
+		font-weight: 700;
 		margin-bottom: 0;
 		letter-spacing: 1px;
 		line-height: 1.25em !important;
@@ -324,10 +327,7 @@
 	margin: .5em 1em;
 	background: white;
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	  --mask: radial-gradient(15px at 15px 15px,#0000 98%,#000) -15px -15px;
-	  -webkit-mask: var(--mask);
-			  mask: var(--mask);   
+	        box-sizing: border-box; 
 	text-align: center;
 	padding: 1em;
 	&:hover {
@@ -353,7 +353,7 @@
 .CompanyName {
 	font-weight:700;
 	margin-top: 1em;
-	border-top: 2px solid $color__gold;
+	border-top: 2px solid $color__lime-green;
     padding-top: 1em;
 }
 
@@ -365,60 +365,54 @@
 }
 
 .Tier {
-	font-family: $font__fancy;
+	font-family: $font__main;
 	margin-top: 1em;
 	padding: .25em .25em .35em .25em;
+	border-radius: 9999px;
 	//background: $color__lightest-gray;
 	text-transform: uppercase;
+	font-weight: 300;
+	font-size: .8em;
 }
 
 .cosponsortier{
 	.Tier {
-		//@include gradient(45deg, $call-to-action-btn);
-		//font-weight: 700;
-		color: $color__gold;
-		background: $color__red;
+		color: white;
+		background: $color__navy;
 	}
 }
 
 .platinumtier{
 	.Tier {
-		background: $color__teal;
+		background: $color__bright-red;
 		color: white;
 	}
 }
 
 .goldtier{
 	.Tier {
-		background: $color__dark-gold;
-		color: white;
-	}
-}
-
-.goldplustier{
-	.Tier {
-		background: $color__teal;
-		color: white;
+		background: $color__gold;
+		color: $color__navy;
 	}
 }
 
 .silvertier{
 	.Tier { 
-		background: $color__lightest-gray;
-		color: $color__dark-teal;
+		background: $color__blue;
+		color: white;
 	}
 }
 
 .exhibitortier{
 	.Tier {
-		background: $color__dark-teal;
+		background: $color__dark-blue;
 		color: white;
 	}
 }
 
 .nonprofittier{
 	.Tier {
-		background: $color__blue;
+		background: $color__dark-teal;
 		color: white;
 	}
 }

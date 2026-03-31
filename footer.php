@@ -31,9 +31,9 @@
 									<p><strong>Gold</strong> — Exhibitor Sales Kit</p>
 								</div>	
 								<div class="div2024">
-									<h3>Workshop 2024</h3>
+									<h3>Workshop 2024 &amp; 2025</h3>
 									<p><strong>Honoree</strong></p>
-									<a href="https://tsefastest50.com/honorees/" target="_blank"><img src="/wp-content/themes/workshop2026/img/F50-2025-Tile-Blue-Horizontal.jpg" alt="Trade Show Executive's Fastes 50 logo" /></a> 
+									<a href="https://tsefastest50.com/honorees/" target="_blank"><img src="/wp-content/themes/workshop2026/img/TSE-Fast50HonoreeVert-Color-2025-scaled.jpg" alt="Trade Show Executive's Fastes 50 logo" /></a> 
 								</div>
 								<div class="div2025">
 									<h3>Workshop 2025</h3>

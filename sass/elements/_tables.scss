@@ -33,6 +33,8 @@ td {
 
 th {
 	vertical-align: bottom; 
+	font-family: $font__main;
+	font-weight: 700;
 	@media all and (max-width: 600px) {
 		font-size: .7em;
 		letter-spacing: 0;
