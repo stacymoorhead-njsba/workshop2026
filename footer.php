@@ -17,7 +17,7 @@
                 <div class="col-md-12">
                     <div class="d-flex justify-content-around flex-wrap">
 						<div class="award fade-in-6s">
-							<h2>Award Winning Workshops</h2>
+							<h2>Award-Winning Workshops</h2>
 							<div class="d-flex">
 								<div class="div2021">
 									<h3>Workshop 2021</h3>

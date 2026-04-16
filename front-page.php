@@ -49,7 +49,7 @@ get_header();
 			<img class="banner-graphic-mobile" src="/wp-content/themes/workshop2026/img/ws26website_homepage_banner_graphics_mobile.svg">		
 			<div class="date-co-sponsor">
 				<div class="date">
-				<strong>Oct. <br>19-20</strong> 			
+				<strong>Oct. <br>19-22</strong> 			
 				</div>	
 				<div class="co-sponsor">
 					<span>Co-sponsored by</span> <br><strong>NJASA &amp; NJASBO</strong> 	
