@@ -30,7 +30,7 @@
 						$alt = $keynote['keynote_image']['alt'];
 					?>		
 					<article class="fade-in-4s">
-						<div class="keynote-speaker">	
+						<div class="keynote-speaker content content-bg">	
 							<div class="keynote-speaker-header">
 								<div class="speaker-image">
 									<img src="<?php echo esc_url( $image ); ?>" alt="<?php echo esc_attr( $alt ); ?>" />

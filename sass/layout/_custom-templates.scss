@@ -65,28 +65,13 @@
 /*--------KEYNOTES--------*/
 .keynote-speaker {
 	
-	background:url("img/ws-website-graphics_straight-spotlights.svg") no-repeat;
-	background-size: 100%;
-	background-position:center top;
-	background-color: white;
-	  --mask: radial-gradient(20px at 20px 20px,#0000 98%,#000) -20px -20px;
-	  -webkit-mask: var(--mask);
-			  mask: var(--mask);
-	margin: 1em;
-	padding: 2em;
-	border-left: 0;
-	border-right: 0;
-	box-sizing: border-box;
+	margin-bottom: 10em;
 	h2 {
-		font-family: $font__fancy;
+		font-family: $font__main;
 		margin: 0;
 	}
 	h3 {margin:0;}
-	h3 {font-size: 1.4em; text-transform: none;}	
-	@media all and (max-width: 800px) {
-		background-size: 150%;
-		//margin: 1em;
-	}
+	h3 {font-size: 1.4em; text-transform: none; color: $color__dark-teal;}	
 }
 
 .keynote-speaker-header {
@@ -108,7 +93,6 @@
 	.speaker-image {
 		//@include box-shadow(7px, 7px, 0, $color__gray);
 		border-radius: 50%;
-		border: 5px $color__border-button solid;
 		margin-right: 1em;
 		width: 200px;   
 		height: 200px;
@@ -131,10 +115,9 @@
 }
 
 .bio {
-	background: #f6f8f8;
+	background: #fffbf1;
 	padding: 1em;
-	//border-top: 3px solid $color__light-cyan;
-	//border-bottom: 3px solid $color__light-cyan;
+	strong {color: $color__light-blue;}
 }
 
 .squiggly {
